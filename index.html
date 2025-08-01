@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORIABO - 本格焼き鳥居酒屋</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TORIABO</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#concept">コンセプト</a></li>
+                <li><a href="#menu">メニュー</a></li>
+                <li><a href="#about">店舗情報</a></li>
+                <li><a href="#reservation">予約</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TORIABO</h1>
+            <p>本格焼き鳥と日本酒で至福のひとときを</p>
+            <a href="#reservation" class="cta-button">ご予約はこちら</a>
+        </div>
+    </section>
+
+    <!-- コンセプトセクション -->
+    <section id="concept" class="concept">
+        <div class="container">
+            <h2>コンセプト</h2>
+            <div class="concept-content">
+                <div class="concept-text">
+                    <h3>伝統と革新の融合</h3>
+                    <p>TORIABOは、創業30年の伝統を守りながら、現代の食文化に合わせて進化し続ける焼き鳥専門店です。</p>
+                    <p>厳選された地鶏と、職人が丹精込めて焼き上げる焼き鳥は、一口食べればその違いが分かります。</p>
+                    <p>日本酒や焼酎、ビールなど、焼き鳥に合うお酒も豊富に取り揃えております。</p>
+                </div>
+                <div class="concept-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="焼き鳥">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メニューセクション -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>メニュー</h2>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="yakitori">焼き鳥</button>
+                <button class="tab-button" data-tab="drinks">お酒</button>
+                <button class="tab-button" data-tab="courses">コース</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- 焼き鳥メニュー -->
+                <div id="yakitori" class="tab-content active">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h3>もも肉</h3>
+                            <p class="price">¥180</p>
+                            <p class="description">ジューシーで柔らかいもも肉</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ささみ</h3>
+                            <p class="price">¥160</p>
+                            <p class="description">ヘルシーで上品な味わい</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ねぎま</h3>
+                            <p class="price">¥150</p>
+                            <p class="description">定番のねぎま</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>つくね</h3>
+                            <p class="price">¥200</p>
+                            <p class="description">手作りつくね</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>砂肝</h3>
+                            <p class="price">¥180</p>
+                            <p class="description">コリコリの食感</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>レバー</h3>
+                            <p class="price">¥160</p>
+                            <p class="description">鉄分たっぷり</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- お酒メニュー -->
+                <div id="drinks" class="tab-content">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h3>日本酒</h3>
+                            <p class="price">¥500〜</p>
+                            <p class="description">地元の酒蔵から厳選</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>焼酎</h3>
+                            <p class="price">¥400〜</p>
+                            <p class="description">芋・麦・米焼酎各種</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ビール</h3>
+                            <p class="price">¥600</p>
+                            <p class="description">生ビール</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ハイボール</h3>
+                            <p class="price">¥500</p>
+                            <p class="description">すっきりとした味わい</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- コースメニュー -->
+                <div id="courses" class="tab-content">
+                    <div class="menu-grid">
+                        <div class="menu-item course-item">
+                            <h3>お気軽コース</h3>
+                            <p class="price">¥3,500</p>
+                            <p class="description">焼き鳥5本 + お酒2杯 + 小鉢2品</p>
+                        </div>
+                        <div class="menu-item course-item">
+                            <h3>満足コース</h3>
+                            <p class="price">¥5,500</p>
+                            <p class="description">焼き鳥8本 + お酒3杯 + 小鉢3品 + ご飯</p>
+                        </div>
+                        <div class="menu-item course-item">
+                            <h3>贅沢コース</h3>
+                            <p class="price">¥8,500</p>
+                            <p class="description">焼き鳥12本 + お酒飲み放題 + 小鉢5品 + ご飯 + デザート</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 店舗情報セクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>店舗情報</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="info-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> アクセス</h3>
+                        <p>〒150-0002<br>東京都渋谷区渋谷1-1-1<br>渋谷駅から徒歩5分</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-clock"></i> 営業時間</h3>
+                        <p>月〜金: 17:00〜23:00<br>土日祝: 16:00〜23:00<br>定休日: 火曜日</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-phone"></i> お電話</h3>
+                        <p>03-1234-5678</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-users"></i> 席数</h3>
+                        <p>カウンター席: 12席<br>テーブル席: 4テーブル（16席）<br>合計: 28席</p>
+                    </div>
+                </div>
+                
+                <div class="staff-section">
+                    <h3>スタッフ紹介</h3>
+                    <div class="staff-grid">
+                        <div class="staff-item">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="店長">
+                            <h4>店長 田中</h4>
+                            <p>30年の経験を活かし、お客様に最高の焼き鳥をお届けします。</p>
+                        </div>
+                        <div class="staff-item">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="副店長">
+                            <h4>副店長 佐藤</h4>
+                            <p>日本酒の知識が豊富で、お酒のペアリングをご提案いたします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 予約セクション -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>ご予約</h2>
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>ご予約について</h3>
+                    <p>ご予約は電話またはオンラインで承っております。</p>
+                    <p>お電話: 03-1234-5678</p>
+                    <p>営業時間: 17:00〜23:00（火曜定休）</p>
+                </div>
+                
+                <form class="reservation-form">
+                    <div class="form-group">
+                        <label for="name">お名前 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">お電話番号 *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">ご来店日 *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">ご来店時間 *</label>
+                            <select id="time" name="time" required>
+                                <option value="">選択してください</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">ご来店人数 *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">選択してください</option>
+                            <option value="1">1名様</option>
+                            <option value="2">2名様</option>
+                            <option value="3">3名様</option>
+                            <option value="4">4名様</option>
+                            <option value="5">5名様</option>
+                            <option value="6">6名様</option>
+                            <option value="7">7名様以上</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">ご要望・ご質問</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">予約を送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TORIABO</h3>
+                    <p>本格焼き鳥と日本酒で至福のひとときを</p>
+                </div>
+                <div class="footer-section">
+                    <h4>営業時間</h4>
+                    <p>月〜金: 17:00〜23:00<br>土日祝: 16:00〜23:00<br>定休日: 火曜日</p>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>電話: 03-1234-5678<br>住所: 〒150-0002 東京都渋谷区渋谷1-1-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TORIABO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
