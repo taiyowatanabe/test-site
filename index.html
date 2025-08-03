@@ -33,7 +33,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-logo">
-                <img src="" alt="鳥あぼ" class="hero-logo-img">
+                <img src="toriabo-logo.png" alt="鳥あぼ" class="hero-logo-img">
             </div>
             <p>本格焼き鳥と日本酒で至福のひとときを</p>
         </div>
@@ -62,16 +62,16 @@
         <div class="container">
             <h2>メニュー</h2>
             <div class="menu-tabs">
-                <button class="tab-button active" data-tab="drinks">お酒</button>
-                <button class="tab-button" data-tab="yakitori">焼き鳥</button>
-                <button class="tab-button" data-tab="sauces">たれ・塩焼き</button>
-                <button class="tab-button" data-tab="dishes">一品料理</button>
+                <button class="tab-button active" data-tab="alcohol">アルコール</button>
                 <button class="tab-button" data-tab="softdrinks">ソフトドリンク</button>
+                <button class="tab-button" data-tab="tareyaki">たれ焼</button>
+                <button class="tab-button" data-tab="shioyaki">塩焼</button>
+                <button class="tab-button" data-tab="dishes">一品料理</button>
             </div>
             
             <div class="menu-content">
-                <!-- お酒メニュー -->
-                <div id="drinks" class="tab-content active">
+                <!-- アルコールメニュー -->
+                <div id="alcohol" class="tab-content active">
                     <div class="menu-grid">
                         <div class="menu-item">
                             <h3>ビール</h3>
@@ -116,62 +116,92 @@
                     </div>
                 </div>
 
-                <!-- 焼き鳥メニュー -->
-                <div id="yakitori" class="tab-content">
+                <!-- ソフトドリンクメニュー -->
+                <div id="softdrinks" class="tab-content">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <h3>もも肉</h3>
-                            <p class="price">¥180</p>
+                            <h3>コーラ</h3>
+                            <p class="price">¥350</p>
                         </div>
                         <div class="menu-item">
-                            <h3>ささみ</h3>
-                            <p class="price">¥160</p>
+                            <h3>ウーロン茶</h3>
+                            <p class="price">¥350</p>
                         </div>
                         <div class="menu-item">
-                            <h3>ねぎま</h3>
-                            <p class="price">¥150</p>
+                            <h3>メロンソーダ</h3>
+                            <p class="price">¥350</p>
                         </div>
                         <div class="menu-item">
-                            <h3>つくね</h3>
-                            <p class="price">¥200</p>
+                            <h3>コーラフロート</h3>
+                            <p class="price">¥500</p>
                         </div>
                         <div class="menu-item">
-                            <h3>砂肝</h3>
-                            <p class="price">¥180</p>
+                            <h3>クリームソーダ</h3>
+                            <p class="price">¥500</p>
                         </div>
                         <div class="menu-item">
-                            <h3>レバー</h3>
-                            <p class="price">¥160</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>ハツ</h3>
-                            <p class="price">¥160</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>ぼんじり</h3>
-                            <p class="price">¥150</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>せせり</h3>
-                            <p class="price">¥150</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>手羽先</h3>
-                            <p class="price">¥180</p>
+                            <h3>アイスクリーム</h3>
+                            <p class="price">¥300</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- たれ・塩焼きメニュー -->
-                <div id="sauces" class="tab-content">
+                <!-- たれ焼メニュー -->
+                <div id="tareyaki" class="tab-content">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <h3>たれ焼き</h3>
+                            <h3>もも</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ねぎま</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>レバー</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>豚ねぎま</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>うずら</h3>
+                            <p class="price">¥180</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>ししとう</h3>
                             <p class="price">¥150</p>
                         </div>
                         <div class="menu-item">
-                            <h3>塩焼き</h3>
+                            <h3>ヤングコーン</h3>
                             <p class="price">¥150</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 塩焼メニュー -->
+                <div id="shioyaki" class="tab-content">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <h3>ささみ</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>はつ</h3>
+                            <p class="price">¥210</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>すなぎも</h3>
+                            <p class="price">¥180</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>銀皮</h3>
+                            <p class="price">¥150</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>豚ハラミ</h3>
+                            <p class="price">¥240</p>
                         </div>
                     </div>
                 </div>
@@ -180,58 +210,44 @@
                 <div id="dishes" class="tab-content">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <h3>唐揚げ</h3>
-                            <p class="price">¥400</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>鶏のから揚げ</h3>
-                            <p class="price">¥450</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>焼き鳥丼</h3>
+                            <h3>だし巻き玉子</h3>
                             <p class="price">¥600</p>
                         </div>
                         <div class="menu-item">
-                            <h3>親子丼</h3>
-                            <p class="price">¥550</p>
+                            <h3>豚シソぐるぐる（改）</h3>
+                            <p class="price">¥300</p>
                         </div>
                         <div class="menu-item">
-                            <h3>玉子焼き</h3>
+                            <h3>塩ダレ豆腐</h3>
                             <p class="price">¥300</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>塩ダレキューリ</h3>
+                            <p class="price">¥300</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>たくあん</h3>
+                            <p class="price">¥200</p>
                         </div>
                         <div class="menu-item">
                             <h3>枝豆</h3>
                             <p class="price">¥250</p>
                         </div>
-                    </div>
-                </div>
-
-                <!-- ソフトドリンクメニュー -->
-                <div id="softdrinks" class="tab-content">
-                    <div class="menu-grid">
                         <div class="menu-item">
-                            <h3>コーラ</h3>
+                            <h3>韓国のり</h3>
                             <p class="price">¥200</p>
                         </div>
                         <div class="menu-item">
-                            <h3>ジンジャーエール</h3>
-                            <p class="price">¥200</p>
+                            <h3>梅キューリ</h3>
+                            <p class="price">¥450</p>
                         </div>
                         <div class="menu-item">
-                            <h3>オレンジジュース</h3>
-                            <p class="price">¥250</p>
+                            <h3>ガツニンニク</h3>
+                            <p class="price">¥450</p>
                         </div>
                         <div class="menu-item">
-                            <h3>グレープフルーツジュース</h3>
-                            <p class="price">¥250</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>お茶</h3>
-                            <p class="price">¥150</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>コーヒー</h3>
-                            <p class="price">¥200</p>
+                            <h3>スモークチーズ</h3>
+                            <p class="price">¥300</p>
                         </div>
                     </div>
                 </div>
@@ -308,7 +324,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="logo.svg" alt="鳥あぼ" class="footer-logo-img">
+                        <img src="toriabo-logo.png" alt="鳥あぼ" class="footer-logo-img">
                     </div>
                     <p>本格焼き鳥と日本酒で至福のひとときを</p>
                 </div>
