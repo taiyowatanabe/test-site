@@ -38,10 +38,14 @@ body {
     height: 70px;
 }
 
-.nav-logo h2 {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 700;
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
 }
 
 .nav-menu {
@@ -89,10 +93,20 @@ body {
     color: #fff;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-logo {
+    margin-bottom: 2rem;
+}
+
+.hero-logo-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
     animation: fadeInUp 1s ease;
 }
 
@@ -100,24 +114,6 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.3s both;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #ff6b35;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    animation: fadeInUp 1s ease 0.6s both;
-}
-
-.cta-button:hover {
-    background: #e55a2b;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
 }
 
 /* セクション共通スタイル */
@@ -168,6 +164,7 @@ section h2 {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .tab-button {
@@ -179,6 +176,7 @@ section h2 {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .tab-button.active,
@@ -197,16 +195,17 @@ section h2 {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .menu-item {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .menu-item:hover {
@@ -214,25 +213,15 @@ section h2 {
 }
 
 .menu-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #333;
 }
 
 .menu-item .price {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #ff6b35;
-    margin-bottom: 0.5rem;
-}
-
-.menu-item .description {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-.course-item {
-    grid-column: span 2;
 }
 
 /* 店舗情報セクション */
@@ -308,87 +297,49 @@ section h2 {
     font-size: 0.9rem;
 }
 
-/* 予約セクション */
-.reservation-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.reservation-info {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.reservation-info h3 {
-    color: #ff6b35;
-    margin-bottom: 1rem;
-}
-
-.reservation-info p {
-    margin-bottom: 0.5rem;
-}
-
-.reservation-form {
+/* お問い合わせセクション */
+.contact {
     background: #fff;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+    gap: 3rem;
+}
+
+.contact-item {
+    text-align: center;
     padding: 2rem;
+    background: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.contact-item h3 {
+    color: #ff6b35;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
 }
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.phone-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6b35;
+    margin-bottom: 1rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #333;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #ff6b35;
-}
-
-.submit-button {
-    background: #ff6b35;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.submit-button:hover {
-    background: #e55a2b;
-    transform: translateY(-2px);
+.contact-item p {
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 /* フッター */
@@ -405,7 +356,17 @@ section h2 {
     margin-bottom: 2rem;
 }
 
-.footer-section h3,
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
 .footer-section h4 {
     margin-bottom: 1rem;
     color: #ff6b35;
@@ -467,13 +428,12 @@ section h2 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .hero-logo-img {
+        max-width: 300px;
     }
 
     .concept-content,
-    .about-content,
-    .reservation-content {
+    .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -483,12 +443,16 @@ section h2 {
         align-items: center;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .course-item {
-        grid-column: span 1;
+    .contact-info {
+        gap: 2rem;
+    }
+
+    .phone-number {
+        font-size: 1.5rem;
     }
 }
 
@@ -505,7 +469,15 @@ section h2 {
         font-size: 2rem;
     }
 
-    .hero-content h1 {
-        font-size: 2rem;
+    .hero-logo-img {
+        max-width: 250px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phone-number {
+        font-size: 1.3rem;
     }
 } 

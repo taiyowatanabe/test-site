@@ -3,7 +3,6 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
-const reservationForm = document.querySelector('.reservation-form');
 
 // ハンバーガーメニューの切り替え
 hamburger.addEventListener('click', () => {
@@ -58,52 +57,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// 予約フォームの処理
-if (reservationForm) {
-    reservationForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // フォームデータの取得
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        // バリデーション
-        if (!data.name || !data.phone || !data.date || !data.time || !data.guests) {
-            alert('必須項目を入力してください。');
-            return;
-        }
-        
-        // 予約確認メッセージ
-        const message = `
-予約を受け付けました。
-
-【予約内容】
-お名前: ${data.name}
-電話番号: ${data.phone}
-メールアドレス: ${data.email || '未入力'}
-来店日: ${data.date}
-来店時間: ${data.time}
-人数: ${data.guests}名様
-ご要望: ${data.message || '特になし'}
-
-ご予約ありがとうございます。
-当日お待ちしております。
-        `;
-        
-        alert(message);
-        
-        // フォームをリセット
-        this.reset();
-    });
-}
-
-// 日付の最小値を今日に設定
-const dateInput = document.getElementById('date');
-if (dateInput) {
-    const today = new Date().toISOString().split('T')[0];
-    dateInput.min = today;
-}
-
 // アニメーション効果（Intersection Observer）
 const observerOptions = {
     threshold: 0.1,
@@ -121,7 +74,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // アニメーション対象要素の設定
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.menu-item, .info-item, .staff-item');
+    const animateElements = document.querySelectorAll('.menu-item, .info-item, .staff-item, .contact-item');
     
     animateElements.forEach(el => {
         el.style.opacity = '0';
@@ -141,24 +94,6 @@ document.querySelectorAll('.menu-item').forEach(item => {
         item.style.transform = 'translateY(0) scale(1)';
     });
 });
-
-// 電話番号の自動フォーマット
-const phoneInput = document.getElementById('phone');
-if (phoneInput) {
-    phoneInput.addEventListener('input', (e) => {
-        let value = e.target.value.replace(/\D/g, '');
-        if (value.length > 0) {
-            if (value.length <= 3) {
-                value = value;
-            } else if (value.length <= 7) {
-                value = value.slice(0, 3) + '-' + value.slice(3);
-            } else {
-                value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
-            }
-        }
-        e.target.value = value;
-    });
-}
 
 // ローディングアニメーション
 window.addEventListener('load', () => {
