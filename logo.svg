@@ -1,1 +1,14 @@
- 
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="200" fill="white"/>
+  
+  <!-- やきとり（上部） -->
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ff0000" text-anchor="middle">
+    やきとり
+  </text>
+  
+  <!-- 鳥あぼ（下部） -->
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000" text-anchor="middle">
+    鳥あぼ
+  </text>
+</svg> 
